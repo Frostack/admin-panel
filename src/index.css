@@ -1,9 +1,18 @@
 :root {
-  --red: #e63946ff;
-  --blue-1: #1d3557ff;
-  --blue-2: #457b9dff;
-  --blue-3: #a8dadcff;
-  --blue-4: #f1faeeff;
+  --white: #f8f9faff;
+  --gray-1: #e9ecefff;
+  --gray-2: #dee2e6ff;
+  --gray-3: #ced4daff;
+  --gray-4: #adb5bdff;
+  --gray-5: #6c757dff;
+  --gray-6: #495057ff;
+  --gray-7: #343a40ff;
+  --black: #212529ff;
+
+  --yellow: #ffe74cff;
+  --red: #ff5964ff;
+  --green: #6bf178ff;
+  --blue: #35a7ffff;
 }
 
 html {
@@ -16,7 +25,11 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  font-family: 'Nunito', sans-serif;
+  color: var(--black);
+}
+
 body {
   margin: 0;
-  font-family: 'Nunito', sans-serif;
 }
