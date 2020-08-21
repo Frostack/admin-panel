@@ -40,3 +40,22 @@ export const Image = styled.img`
   height: 100%;
   object-fit: contain;
 `;
+
+export const ErrorText = styled.p`
+  margin: 0;
+  color: var(--red);
+  font-weight: bolder;
+`;
+
+export const AlertModal = styled.div`
+  border-radius: 4px;
+  position: fixed;
+  width: 50vw;
+  background-color: #c4f9c9;
+  color: #204824;
+  padding: 16px 32px;
+  font-weight: bold;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+`;
