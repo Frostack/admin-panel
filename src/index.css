@@ -1,5 +1,5 @@
 :root {
-  --white: #f8f9fa;
+  --white: #fffffc;
   --gray-1: #e9ecef;
   --gray-2: #dee2e6;
   --gray-3: #ced4da;
@@ -9,9 +9,12 @@
   --gray-7: #343a40;
   --black: #212529;
   --yellow: #ffe74c;
-  --red: #ff5964;
-  --green: #6bf178;
-  --blue: #35a7ff;
+  --red-1: #ff5964;
+  --red-2: #ce4d4d;
+  --green-1: #6bf178;
+  --green-2: #289f3b;
+  --blue-1: #35a7ff;
+  --blue-2: #1365dd;
 }
 
 html {
@@ -26,9 +29,28 @@ html {
 
 * {
   font-family: 'Nunito', sans-serif;
-  color: var(--black);
 }
 
 body {
   margin: 0;
+  color: var(--black);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  scrollbar-width: none;
+  scrollbar-color: var(--black) var(--white);
+}
+*::-webkit-scrollbar {
+  width: 7px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--white);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--black);
 }
