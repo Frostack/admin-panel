@@ -54,3 +54,12 @@ body {
 *::-webkit-scrollbar-thumb {
   background-color: var(--black);
 }
+
+.custom-modal {
+  margin: 0;
+  width: 50vw;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
