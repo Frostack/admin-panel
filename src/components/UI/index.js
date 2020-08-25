@@ -154,8 +154,7 @@ export const Wrapper = styled.div`
   border-radius: 4px;
   position: fixed;
   width: 50vw;
-  background-color: ${props => props.color};
-  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+  background-color: #6bf178cc;
   color: ${props => props.color};
   border-bottom: 4px solid ${props => props.color};
   padding: 16px 32px;
@@ -169,7 +168,7 @@ export const Wrapper = styled.div`
 `;
 
 export const AlertCustomButton = styled(Button)`
-  background-color: inherit;
+  background-color: #289f3b;
   padding: 1px;
   color: var(--white);
   :hover {
@@ -280,14 +279,6 @@ export const UserDetailUserCard = styled.div`
   flex-direction: column;
 `;
 
-export const CustomRowItem = styled(RowItem)`
-  flex-basis: 19%;
-`;
-
-export const ResourceItemCustomRowItem = styled(RowItem)`
-  flex-basis: 19%;
-`;
-
 export const ResourceListWrapper = styled.div`
   height: 100vh;
 `;
@@ -338,6 +329,10 @@ export const ElementRowItem = styled.p`
   flex-basis: 31%;
 `;
 
+export const CustomRowItem = styled(ElementRowItem)`
+  padding: 5px;
+`;
+
 export const InfoRow = styled.div`
   border-bottom: 2px solid var(--gray-1);
   display: flex;
@@ -378,4 +373,8 @@ export const CustomRowInfo = styled(InfoRow)`
   :hover {
     background-color: ${props => props.color}88;
   }
+`;
+
+export const ResourceHeadingWrapper = styled(InfoRowHeading)`
+  flex-grow: 0;
 `;

@@ -5,7 +5,7 @@ const useTotal = reqPath => {
   return {
     total: data?.total,
     isLoading: !error && !data,
-    error: error,
+    error,
   };
 };
 

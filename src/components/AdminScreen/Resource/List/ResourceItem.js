@@ -2,31 +2,19 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { showResourceDetail, deleteResource, showAlert, editResource } from '../../../../actions';
-import { ResourceItemCustomRowItem, CustomRowInfo, ElementWrapper } from '../../../UI';
+import { CustomRowItem, CustomRowInfo } from '../../../UI';
 
-function ResourceItem({
-  name,
-  year,
-  color,
-  pantone,
-  id,
-  showResourceDetail,
-  deleteResource,
-  showAlert,
-  editResource,
-}) {
+function ResourceItem({ name, year, color, pantone, id, showResourceDetail }) {
   const onRowClick = () => showResourceDetail(id);
 
   return (
-    <ElementWrapper>
-      <CustomRowInfo color={color} onClick={onRowClick}>
-        <ResourceItemCustomRowItem>{name}</ResourceItemCustomRowItem>
-        <ResourceItemCustomRowItem>{year}</ResourceItemCustomRowItem>
-        <ResourceItemCustomRowItem>{id}</ResourceItemCustomRowItem>
-        <ResourceItemCustomRowItem>{color}</ResourceItemCustomRowItem>
-        <ResourceItemCustomRowItem>{pantone}</ResourceItemCustomRowItem>
-      </CustomRowInfo>
-    </ElementWrapper>
+    <CustomRowInfo color={color} onClick={onRowClick}>
+      <CustomRowItem>{name}</CustomRowItem>
+      <CustomRowItem>{year}</CustomRowItem>
+      <CustomRowItem>{id}</CustomRowItem>
+      <CustomRowItem>{color}</CustomRowItem>
+      <CustomRowItem>{pantone}</CustomRowItem>
+    </CustomRowInfo>
   );
 }
 

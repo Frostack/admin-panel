@@ -17,10 +17,6 @@
   --blue-2: #1365dd;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
@@ -29,30 +25,31 @@ html {
 
 * {
   font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: none;
+  scrollbar-color: var(--black) var(--white);
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+}
+
+html {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   color: var(--black);
-}
-
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  scrollbar-width: none;
-  scrollbar-color: var(--black) var(--white);
-}
-*::-webkit-scrollbar {
-  width: 7px;
-}
-*::-webkit-scrollbar-track {
-  background: var(--white);
-}
-*::-webkit-scrollbar-thumb {
-  background-color: var(--black);
 }
 
 .custom-modal {
