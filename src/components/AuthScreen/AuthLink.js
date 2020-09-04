@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import { SmallText, TextButton } from '../UI';
+import { SmallText, TextButton } from '../UI'
 
 function AuthLink({ description, to, buttonText }) {
   return (
@@ -11,7 +11,7 @@ function AuthLink({ description, to, buttonText }) {
         <TextButton>{buttonText}</TextButton>
       </Link>{' '}
     </SmallText>
-  );
+  )
 }
 
-export default AuthLink;
+export default AuthLink

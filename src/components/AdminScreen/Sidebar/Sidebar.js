@@ -1,9 +1,9 @@
-import React from 'react';
-import { BsPersonFill, BsLayersFill, BsBarChartFill } from 'react-icons/bs';
+import React from 'react'
+import { BsPersonFill, BsLayersFill, BsBarChartFill } from 'react-icons/bs'
 
-import { BoldText, SidebarWrapper, ExitLink } from '../../UI';
-import SidebarLink from './SidebarLink';
-import SidebarBoldLink from './SidebarBoldLink';
+import { BoldText, SidebarWrapper, ExitLink } from '../../UI'
+import SidebarLink from './SidebarLink'
+import SidebarBoldLink from './SidebarBoldLink'
 
 function Sidebar() {
   return (
@@ -27,7 +27,7 @@ function Sidebar() {
       <SidebarLink to="/admin/resource/list">List</SidebarLink>
       <ExitLink to="/login">Logout</ExitLink>
     </SidebarWrapper>
-  );
+  )
 }
 
-export default Sidebar;
+export default Sidebar

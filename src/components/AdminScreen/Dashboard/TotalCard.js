@@ -1,16 +1,16 @@
-import React from 'react';
+import React from 'react'
 
-import { TotalCardWrapper } from '../../UI';
-import useTotal from '../../../hooks/useTotal';
-import Progress from '../../UI/Progress';
-import RequestError from '../../UI/RequestError';
-import Loading from '../../UI/Loading';
+import { TotalCardWrapper } from '../../UI'
+import useTotal from '../../../hooks/useTotal'
+import Progress from '../../UI/Progress'
+import RequestError from '../../UI/RequestError'
+import Loading from '../../UI/Loading'
 
 function TotalCard({ icon, caption, color, reqPath }) {
-  const { total, isLoading, error } = useTotal(reqPath);
+  const { total, isLoading, error } = useTotal(reqPath)
 
-  if (error) return <RequestError />;
-  if (isLoading) return <Loading />;
+  if (error) return <RequestError />
+  if (isLoading) return <Loading />
 
   return (
     <TotalCardWrapper color={color}>
@@ -26,7 +26,7 @@ function TotalCard({ icon, caption, color, reqPath }) {
         <div>{total}</div>
       </div>
     </TotalCardWrapper>
-  );
+  )
 }
 
-export default TotalCard;
+export default TotalCard

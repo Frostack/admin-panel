@@ -1,8 +1,8 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from 'react'
+import { connect } from 'react-redux'
 
-import useResource from '../../../../hooks/useResource';
-import { deleteResource, showAlert, editResource } from '../../../../actions';
+import useResource from '../../../../hooks/useResource'
+import { deleteResource, showAlert, editResource } from '../../../../actions'
 import {
   ErrorText,
   ResourceDetailWrapper,
@@ -10,16 +10,16 @@ import {
   ResourceDetailRowItem,
   ResourceDetailGrayText,
   ColorName,
-} from '../../../UI';
-import Loading from '../../../UI/Loading';
+} from '../../../UI'
+import Loading from '../../../UI/Loading'
 
 function ResourceDetail({ resourceID }) {
-  const { resource, isError, isLoading } = useResource(resourceID);
+  const { resource, isError, isLoading } = useResource(resourceID)
 
-  if (isError) return <ErrorText className="text-center mt-5">Failed to Load!</ErrorText>;
-  if (isLoading) return <Loading />;
+  if (isError) return <ErrorText className="text-center mt-5">Failed to Load!</ErrorText>
+  if (isLoading) return <Loading />
 
-  const { id, name, year, color, pantone_value } = resource.data;
+  const { id, name, year, color, pantone_value } = resource.data
 
   return (
     <ResourceDetailWrapper>
@@ -47,19 +47,19 @@ function ResourceDetail({ resourceID }) {
         </ResourceDetailRowItem>
       </ResourceDetailUserCard>
     </ResourceDetailWrapper>
-  );
+  )
 }
 
 const mapStateToProps = state => {
   return {
     resourceID: state.resource.detail.id,
-  };
-};
+  }
+}
 
 const mapDispatchToProps = {
   deleteResource,
   showAlert,
   editResource,
-};
+}
 
-export default connect(mapStateToProps, mapDispatchToProps)(ResourceDetail);
+export default connect(mapStateToProps, mapDispatchToProps)(ResourceDetail)

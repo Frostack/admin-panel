@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import {
   AvatarWrapper,
@@ -6,7 +6,7 @@ import {
   ElementRowItem,
   ElementWrapper,
   InfoRowHeading,
-} from '../../../UI';
+} from '../../../UI'
 
 function TableHeading({ fields }) {
   return (
@@ -19,7 +19,7 @@ function TableHeading({ fields }) {
         <RowActions></RowActions>
       </InfoRowHeading>
     </ElementWrapper>
-  );
+  )
 }
 
-export default TableHeading;
+export default TableHeading

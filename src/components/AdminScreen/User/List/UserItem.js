@@ -1,8 +1,8 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { BsPen, BsTrash2 } from 'react-icons/bs';
+import React from 'react'
+import { connect } from 'react-redux'
+import { BsPen, BsTrash2 } from 'react-icons/bs'
 
-import { showUserDetail, editUser, deleteUser, showAlert } from '../../../../actions';
+import { showUserDetail, editUser, deleteUser, showAlert } from '../../../../actions'
 import {
   Avatar,
   ButtonCircle,
@@ -11,15 +11,15 @@ import {
   RowActions,
   ElementRowItem,
   ElementWrapper,
-} from '../../../UI';
+} from '../../../UI'
 
 function UserItem({ avatar, name, email, id, showUserDetail, editUser, deleteUser, showAlert }) {
-  const onRowClick = () => showUserDetail(id);
-  const onEditClick = () => editUser(id);
+  const onRowClick = () => showUserDetail(id)
+  const onEditClick = () => editUser(id)
   const onDeleteClick = () => {
-    deleteUser(id);
-    showAlert('Deleted Successfully!');
-  };
+    deleteUser(id)
+    showAlert('Deleted Successfully!')
+  }
 
   return (
     <ElementWrapper>
@@ -42,7 +42,7 @@ function UserItem({ avatar, name, email, id, showUserDetail, editUser, deleteUse
         </RowActions>
       </InfoRow>
     </ElementWrapper>
-  );
+  )
 }
 
 const mapDispatchToProps = {
@@ -50,6 +50,6 @@ const mapDispatchToProps = {
   editUser,
   deleteUser,
   showAlert,
-};
+}
 
-export default connect(null, mapDispatchToProps)(UserItem);
+export default connect(null, mapDispatchToProps)(UserItem)

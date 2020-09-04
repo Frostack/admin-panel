@@ -1,11 +1,11 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from 'react'
+import { connect } from 'react-redux'
 
-import { showResourceDetail, deleteResource, showAlert, editResource } from '../../../../actions';
-import { CustomRowItem, CustomRowInfo } from '../../../UI';
+import { showResourceDetail, deleteResource, showAlert, editResource } from '../../../../actions'
+import { CustomRowItem, CustomRowInfo } from '../../../UI'
 
 function ResourceItem({ name, year, color, pantone, id, showResourceDetail }) {
-  const onRowClick = () => showResourceDetail(id);
+  const onRowClick = () => showResourceDetail(id)
 
   return (
     <CustomRowInfo color={color} onClick={onRowClick}>
@@ -15,7 +15,7 @@ function ResourceItem({ name, year, color, pantone, id, showResourceDetail }) {
       <CustomRowItem>{color}</CustomRowItem>
       <CustomRowItem>{pantone}</CustomRowItem>
     </CustomRowInfo>
-  );
+  )
 }
 
 const mapDispatchToProps = {
@@ -23,6 +23,6 @@ const mapDispatchToProps = {
   deleteResource,
   showAlert,
   editResource,
-};
+}
 
-export default connect(null, mapDispatchToProps)(ResourceItem);
+export default connect(null, mapDispatchToProps)(ResourceItem)

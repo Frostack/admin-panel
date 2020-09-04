@@ -1,7 +1,7 @@
-import React from 'react';
-import { BsPersonFill, BsLayersFill } from 'react-icons/bs';
+import React from 'react'
+import { BsPersonFill, BsLayersFill } from 'react-icons/bs'
 
-import TotalCard from './TotalCard';
+import TotalCard from './TotalCard'
 
 function Dashboard() {
   return (
@@ -19,7 +19,7 @@ function Dashboard() {
         color="var(--green-2)"
       />
     </div>
-  );
+  )
 }
 
-export default Dashboard;
+export default Dashboard

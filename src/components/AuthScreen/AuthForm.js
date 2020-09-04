@@ -1,11 +1,11 @@
-import React from 'react';
-import { Formik } from 'formik';
+import React from 'react'
+import { Formik } from 'formik'
 
-import { CustomForm, CustomInput } from '../UI';
-import AuthButton from './AuthButton';
+import { CustomForm, CustomInput } from '../UI'
+import AuthButton from './AuthButton'
 
 function AuthForm({ onSubmit, isLoading, title }) {
-  const initialFormValues = { email: '', password: '' };
+  const initialFormValues = { email: '', password: '' }
 
   return (
     <Formik initialValues={initialFormValues} onSubmit={onSubmit}>
@@ -15,7 +15,7 @@ function AuthForm({ onSubmit, isLoading, title }) {
         <AuthButton isLoading={isLoading} title={title} />
       </CustomForm>
     </Formik>
-  );
+  )
 }
 
-export default AuthForm;
+export default AuthForm

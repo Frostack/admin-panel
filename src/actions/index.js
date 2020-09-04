@@ -1,3 +1,3 @@
-export * from './userActions';
-export * from './resourceActions';
-export * from './modalActions';
+export * from './userActions'
+export * from './resourceActions'
+export * from './modalActions'

@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import useAuth from '../../hooks/useAuth';
-import AuthScreen from './AuthScreen';
-import AuthLink from './AuthLink';
+import useAuth from '../../hooks/useAuth'
+import AuthScreen from './AuthScreen'
+import AuthLink from './AuthLink'
 
 function RegisterScreen() {
-  const { error, isLoading, onSubmit } = useAuth('/register');
+  const { error, isLoading, onSubmit } = useAuth('/register')
 
   return (
     <AuthScreen
@@ -17,7 +17,7 @@ function RegisterScreen() {
         <AuthLink to="/login" description="Already have an account?" buttonText="Login" />
       }
     />
-  );
+  )
 }
 
-export default RegisterScreen;
+export default RegisterScreen

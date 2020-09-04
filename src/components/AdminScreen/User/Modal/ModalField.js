@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import { RowItem, GrayText, ModalFieldCustomInput } from '../../../UI';
+import { RowItem, GrayText, ModalFieldCustomInput } from '../../../UI'
 
 function ModalField({ name, label }) {
   return (
@@ -8,7 +8,7 @@ function ModalField({ name, label }) {
       <GrayText>{label}</GrayText>
       <ModalFieldCustomInput name={name} />
     </RowItem>
-  );
+  )
 }
 
-export default ModalField;
+export default ModalField

@@ -1,12 +1,12 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { BsX } from 'react-icons/bs';
+import React from 'react'
+import { connect } from 'react-redux'
+import { BsX } from 'react-icons/bs'
 
-import { hideAlert } from '../../actions';
-import { Wrapper, AlertCustomButton } from './index';
+import { hideAlert } from '../../actions'
+import { Wrapper, AlertCustomButton } from './index'
 
 function AlertModal({ hideAlert, msg, show, color }) {
-  if (!show) return null;
+  if (!show) return null
 
   return (
     <Wrapper color={color}>
@@ -15,7 +15,7 @@ function AlertModal({ hideAlert, msg, show, color }) {
         <BsX size={24} />
       </AlertCustomButton>
     </Wrapper>
-  );
+  )
 }
 
 const mapStateToProps = state => {
@@ -23,11 +23,11 @@ const mapStateToProps = state => {
     show: state.modal.show,
     msg: state.modal.msg,
     color: state.modal.color,
-  };
-};
+  }
+}
 
 const mapDispatchToProps = {
   hideAlert,
-};
+}
 
-export default connect(mapStateToProps, mapDispatchToProps)(AlertModal);
+export default connect(mapStateToProps, mapDispatchToProps)(AlertModal)

@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
 
-import { UserListWrapper, ListWrapper } from '../../../UI';
-import useList from '../../../../hooks/useList';
-import UserHeading from './UserHeading';
-import UserItem from './UserItem';
-import Pagination from '../../../UI/Pagination';
-import Loading from '../../../UI/Loading';
-import RequestError from '../../../UI/RequestError';
+import { UserListWrapper, ListWrapper } from '../../../UI'
+import useList from '../../../../hooks/useList'
+import UserHeading from './UserHeading'
+import UserItem from './UserItem'
+import Pagination from '../../../UI/Pagination'
+import Loading from '../../../UI/Loading'
+import RequestError from '../../../UI/RequestError'
 
 function UserList() {
-  const { items, error, isLoading, page, setPage, totalPages } = useList('users');
+  const { items, error, isLoading, page, setPage, totalPages } = useList('users')
 
-  if (error) return <RequestError />;
-  if (isLoading) return <Loading />;
+  if (error) return <RequestError />
+  if (isLoading) return <Loading />
 
   const renderList = () => {
     return items.map(user => (
@@ -23,8 +23,8 @@ function UserList() {
         name={`${user.first_name} ${user.last_name}`}
         id={user.id}
       />
-    ));
-  };
+    ))
+  }
 
   return (
     <UserListWrapper className="px-5 py-4 d-flex flex-column">
@@ -33,7 +33,7 @@ function UserList() {
       <ListWrapper>{renderList()}</ListWrapper>
       <Pagination page={page} setPage={setPage} totalPages={totalPages} />
     </UserListWrapper>
-  );
+  )
 }
 
-export default UserList;
+export default UserList

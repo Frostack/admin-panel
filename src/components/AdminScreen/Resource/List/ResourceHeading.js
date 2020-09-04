@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import { ResourceHeadingWrapper, CustomRowItem } from '../../../UI';
+import { ResourceHeadingWrapper, CustomRowItem } from '../../../UI'
 
 function ResourceHeading() {
   return (
@@ -11,7 +11,7 @@ function ResourceHeading() {
       <CustomRowItem>Color</CustomRowItem>
       <CustomRowItem>Pantone Value</CustomRowItem>
     </ResourceHeadingWrapper>
-  );
+  )
 }
 
-export default ResourceHeading;
+export default ResourceHeading

@@ -1,10 +1,10 @@
-import React from 'react';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import React from 'react'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
-import authImage from '../../assets/auth.jpg';
-import { Image, ErrorText, AuthColumn } from '../UI';
-import AuthForm from './AuthForm';
+import authImage from '../../assets/auth.jpg'
+import { Image, ErrorText, AuthColumn } from '../UI'
+import AuthForm from './AuthForm'
 
 function AuthScreen({ title, error, isLoading, onSubmit, authLinkComponent }) {
   return (
@@ -20,6 +20,6 @@ function AuthScreen({ title, error, isLoading, onSubmit, authLinkComponent }) {
         <Image src={authImage} />
       </Col>
     </Row>
-  );
+  )
 }
-export default AuthScreen;
+export default AuthScreen

@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import useSWR from 'swr';
+import { useState } from 'react'
+import useSWR from 'swr'
 
 function useList(reqItem) {
-  const [page, setPage] = useState(1);
-  const { data, error } = useSWR(`/${reqItem}?per_page=8&page=${page}`);
+  const [page, setPage] = useState(1)
+  const { data, error } = useSWR(`/${reqItem}?per_page=8&page=${page}`)
 
   return {
     items: data?.data,
@@ -12,7 +12,7 @@ function useList(reqItem) {
     page,
     setPage,
     totalPages: data?.total_pages,
-  };
+  }
 }
 
-export default useList;
+export default useList

@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
 
-import useList from '../../../../hooks/useList';
-import ResourceItem from './ResourceItem';
-import Pagination from '../../../UI/Pagination';
-import Loading from '../../../UI/Loading';
-import ResourceHeading from './ResourceHeading';
-import RequestError from '../../../UI/RequestError';
-import { ResourceListListWrapper, ResourceListWrapper } from '../../../UI';
+import useList from '../../../../hooks/useList'
+import ResourceItem from './ResourceItem'
+import Pagination from '../../../UI/Pagination'
+import Loading from '../../../UI/Loading'
+import ResourceHeading from './ResourceHeading'
+import RequestError from '../../../UI/RequestError'
+import { ResourceListListWrapper, ResourceListWrapper } from '../../../UI'
 
 function UserList() {
-  const { items, error, isLoading, page, setPage, totalPages } = useList('unknown');
+  const { items, error, isLoading, page, setPage, totalPages } = useList('unknown')
 
-  if (error) return <RequestError />;
-  if (isLoading) return <Loading />;
+  if (error) return <RequestError />
+  if (isLoading) return <Loading />
 
   const renderList = () => {
     return items.map(resource => (
@@ -24,8 +24,8 @@ function UserList() {
         pantone={resource.pantone_value}
         year={resource.year}
       />
-    ));
-  };
+    ))
+  }
 
   return (
     <ResourceListWrapper className="px-5 py-4 d-flex flex-column">
@@ -34,7 +34,7 @@ function UserList() {
       <ResourceListListWrapper>{renderList()}</ResourceListListWrapper>
       <Pagination page={page} setPage={setPage} totalPages={totalPages} />
     </ResourceListWrapper>
-  );
+  )
 }
 
-export default UserList;
+export default UserList

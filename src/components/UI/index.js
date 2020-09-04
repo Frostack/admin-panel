@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components';
-import { Link } from 'react-router-dom';
-import { Field, Form } from 'formik';
-import Col from 'react-bootstrap/Col';
+import styled, { css } from 'styled-components'
+import { Link } from 'react-router-dom'
+import { Field, Form } from 'formik'
+import Col from 'react-bootstrap/Col'
 
 export const Input = styled.input`
   background-color: transparent;
@@ -13,7 +13,7 @@ export const Input = styled.input`
   ::placeholder {
     color: var(--gray-6);
   }
-`;
+`
 
 export const Button = styled.button`
   border: none;
@@ -25,13 +25,13 @@ export const Button = styled.button`
   :hover {
     background-color: ${props => (!props.secondary ? 'var(--blue-2)' : 'var(--gray-3)')};
   }
-`;
+`
 
 export const SmallText = styled.p`
   margin: 0;
   font-size: small;
   color: var(--gray-5);
-`;
+`
 
 export const TextButton = styled.button`
   border: none;
@@ -39,19 +39,19 @@ export const TextButton = styled.button`
   padding: 0;
   margin: 0;
   color: var(--blue-1);
-`;
+`
 
 export const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: contain;
-`;
+`
 
 export const ErrorText = styled.p`
   margin: 0;
   color: var(--red);
   font-weight: bolder;
-`;
+`
 
 export const BoldText = styled.h4`
   font-weight: 700;
@@ -59,7 +59,7 @@ export const BoldText = styled.h4`
   margin-bottom: 16px;
   display: flex;
   align-items: center;
-`;
+`
 
 export const LightText = styled.h5`
   font-weight: 300;
@@ -77,12 +77,12 @@ export const LightText = styled.h5`
       color: var(--blue-1);
       font-weight: 600;
     `};
-`;
+`
 
 export const Avatar = styled.img`
   border-radius: 50%;
   border: 2px solid var(--gray-3);
-`;
+`
 
 export const ButtonCircle = styled(Button)`
   background-color: transparent;
@@ -100,7 +100,7 @@ export const ButtonCircle = styled(Button)`
   :disabled:hover {
     background-color: initial;
   }
-`;
+`
 
 export const CustomInput = styled(Field)`
   align-self: stretch;
@@ -113,14 +113,14 @@ export const CustomInput = styled(Field)`
   ::placeholder {
     color: var(--gray-6);
   }
-`;
+`
 
 export const CustomForm = styled(Form)`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 25vw;
-`;
+`
 
 export const CustomButton = styled(Button)`
   font-size: large;
@@ -128,27 +128,27 @@ export const CustomButton = styled(Button)`
   align-items: center;
   justify-content: center;
   width: 15vw;
-`;
+`
 
 export const AuthColumn = styled(Col)`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30vh;
-`;
+`
 
 export const Outer = styled.div`
   height: ${props => props.height}px;
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   overflow: hidden;
-`;
+`
 
 export const Inner = styled.div`
   width: ${props => props.current}%;
   background-color: ${props => props.color};
   height: ${props => props.height}px;
-`;
+`
 
 export const Wrapper = styled.div`
   border-radius: 4px;
@@ -165,7 +165,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`;
+`
 
 export const AlertCustomButton = styled(Button)`
   background-color: #289f3b;
@@ -175,11 +175,11 @@ export const AlertCustomButton = styled(Button)`
     background-color: inherit;
     color: var(--white);
   }
-`;
+`
 
 export const AdminScreenWrapper = styled.div`
   background-color: var(--white);
-`;
+`
 
 export const TotalCardWrapper = styled.div`
   background-color: ${props => props.color};
@@ -190,7 +190,7 @@ export const TotalCardWrapper = styled.div`
   margin: 16px 32px;
   font-size: large;
   background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3));
-`;
+`
 
 export const SidebarWrapper = styled.div`
   background-color: var(--gray-1);
@@ -198,7 +198,7 @@ export const SidebarWrapper = styled.div`
   padding: 32px;
   display: flex;
   flex-direction: column;
-`;
+`
 
 export const ExitLink = styled(Link)`
   color: white;
@@ -211,20 +211,20 @@ export const ExitLink = styled(Link)`
     background-color: var(--red-2);
     color: white;
   }
-`;
+`
 
 export const RowItem = styled.div`
   border-bottom: 2px solid var(--gray-1);
   padding: 16px 24px;
   display: flex;
-`;
+`
 
 export const GrayText = styled.p`
   margin: 0;
   color: var(--gray-5);
   flex-basis: 15%;
   flex-shrink: 0;
-`;
+`
 
 export const ModalFieldCustomInput = styled(Field)`
   flex-grow: 1;
@@ -241,12 +241,12 @@ export const ModalFieldCustomInput = styled(Field)`
   :focus {
     background-color: var(--gray-2);
   }
-`;
+`
 
 export const EditModalWrapper = styled.div`
   display: flex;
   margin: 32px;
-`;
+`
 
 export const UserCard = styled.div`
   border-radius: 16px;
@@ -255,21 +255,21 @@ export const UserCard = styled.div`
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-`;
+`
 
 export const UserListWrapper = styled.div`
   height: 100vh;
-`;
+`
 
 export const ListWrapper = styled.div`
   flex-grow: 1;
-`;
+`
 
 export const UserDetailWrapper = styled.div`
   height: 100vh;
   padding: 32px 0;
   display: flex;
-`;
+`
 
 export const UserDetailUserCard = styled.div`
   border-radius: 16px 0 0 16px;
@@ -277,21 +277,21 @@ export const UserDetailUserCard = styled.div`
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-`;
+`
 
 export const ResourceListWrapper = styled.div`
   height: 100vh;
-`;
+`
 
 export const ResourceListListWrapper = styled.div`
   flex-grow: 1;
-`;
+`
 
 export const ResourceDetailWrapper = styled.div`
   height: 100vh;
   padding: 32px 0;
   display: flex;
-`;
+`
 
 export const ResourceDetailUserCard = styled.div`
   border-radius: 16px 0 0 16px;
@@ -300,38 +300,38 @@ export const ResourceDetailUserCard = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${props => props.color}33;
-`;
+`
 
 export const ResourceDetailRowItem = styled.div`
   border-bottom: 2px solid var(--gray-1);
   padding: 16px 24px;
   display: flex;
-`;
+`
 
 export const ResourceDetailGrayText = styled.p`
   margin: 0;
   color: var(--gray-5);
   flex-basis: 30%;
   flex-shrink: 0;
-`;
+`
 
 export const ColorName = styled(BoldText)`
   background-color: ${props => props.color}88;
   border-radius: 4px;
-`;
+`
 
 export const ElementWrapper = styled.div`
   display: flex;
-`;
+`
 
 export const ElementRowItem = styled.p`
   margin: 0;
   flex-basis: 31%;
-`;
+`
 
 export const CustomRowItem = styled(ElementRowItem)`
   padding: 5px;
-`;
+`
 
 export const InfoRow = styled.div`
   border-bottom: 2px solid var(--gray-1);
@@ -341,40 +341,40 @@ export const InfoRow = styled.div`
   :hover {
     background-color: var(--gray-1);
   }
-`;
+`
 
 export const AvatarWrapper = styled.div`
   width: 32px;
   margin-right: 16px;
   display: flex;
   align-items: center;
-`;
+`
 
 export const RowActions = styled.div`
   flex-basis: 8%;
   display: flex;
   justify-content: space-between;
-`;
+`
 
 export const InfoRowHeading = styled(InfoRow)`
   color: var(--gray-5);
   :hover {
     background-color: initial;
   }
-`;
+`
 
 export const DetailRow = styled.div`
   border-bottom: 2px solid var(--gray-1);
   padding: 16px 24px;
   display: flex;
-`;
+`
 
 export const CustomRowInfo = styled(InfoRow)`
   :hover {
     background-color: ${props => props.color}88;
   }
-`;
+`
 
 export const ResourceHeadingWrapper = styled(InfoRowHeading)`
   flex-grow: 0;
-`;
+`

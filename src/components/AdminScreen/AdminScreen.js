@@ -1,16 +1,16 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
-import { AdminScreenWrapper } from '../UI';
-import Sidebar from './Sidebar/Sidebar';
-import Dashboard from './Dashboard/Dashboard';
-import UserList from './User/List/UserList';
-import UserDetail from './User/Detail/UserDetail';
-import ResourceList from './Resource/List/ResourceList';
-import ResourceDetail from './Resource/Detail/ResourceDetail';
-import UserCreate from './User/UserCreate';
+import { AdminScreenWrapper } from '../UI'
+import Sidebar from './Sidebar/Sidebar'
+import Dashboard from './Dashboard/Dashboard'
+import UserList from './User/List/UserList'
+import UserDetail from './User/Detail/UserDetail'
+import ResourceList from './Resource/List/ResourceList'
+import ResourceDetail from './Resource/Detail/ResourceDetail'
+import UserCreate from './User/UserCreate'
 
 function AdminScreen() {
   return (
@@ -38,7 +38,7 @@ function AdminScreen() {
         </Switch>
       </Row>
     </AdminScreenWrapper>
-  );
+  )
 }
 
 function DashboardRoute() {
@@ -46,7 +46,7 @@ function DashboardRoute() {
     <Col>
       <Dashboard />
     </Col>
-  );
+  )
 }
 
 function UserListRoute() {
@@ -59,7 +59,7 @@ function UserListRoute() {
         <UserDetail />
       </Col>
     </>
-  );
+  )
 }
 
 function CreateUserRoute() {
@@ -67,7 +67,7 @@ function CreateUserRoute() {
     <Col>
       <UserCreate />
     </Col>
-  );
+  )
 }
 
 function ResourceListRoute() {
@@ -80,7 +80,7 @@ function ResourceListRoute() {
         <ResourceDetail />
       </Col>
     </>
-  );
+  )
 }
 
-export default AdminScreen;
+export default AdminScreen

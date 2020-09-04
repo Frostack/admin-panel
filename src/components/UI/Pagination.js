@@ -1,13 +1,13 @@
-import React from 'react';
-import { BsCaretLeftFill, BsCaretRightFill } from 'react-icons/bs';
+import React from 'react'
+import { BsCaretLeftFill, BsCaretRightFill } from 'react-icons/bs'
 
-import { ButtonCircle } from '../UI';
+import { ButtonCircle } from '../UI'
 
 function Pagination({ page, setPage, totalPages }) {
-  const onPrev = () => setPage(page - 1);
-  const onNext = () => setPage(page + 1);
-  const prevDisabled = page === 1;
-  const nextDisabled = page === totalPages;
+  const onPrev = () => setPage(page - 1)
+  const onNext = () => setPage(page + 1)
+  const prevDisabled = page === 1
+  const nextDisabled = page === totalPages
 
   return (
     <div className="mt-2 d-flex justify-content-between">
@@ -21,7 +21,7 @@ function Pagination({ page, setPage, totalPages }) {
       </div>
       <div>Page {page}</div>
     </div>
-  );
+  )
 }
 
-export default Pagination;
+export default Pagination

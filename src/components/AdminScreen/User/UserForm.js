@@ -1,8 +1,8 @@
-import React from 'react';
-import { Formik, Form } from 'formik';
+import React from 'react'
+import { Formik, Form } from 'formik'
 
-import { Button } from '../../UI';
-import ModalField from './Modal/ModalField';
+import { Button } from '../../UI'
+import ModalField from './Modal/ModalField'
 
 function UserForm({ initialValues, onSubmit }) {
   return (
@@ -22,7 +22,7 @@ function UserForm({ initialValues, onSubmit }) {
         </div>
       </Form>
     </Formik>
-  );
+  )
 }
 
-export default UserForm;
+export default UserForm
