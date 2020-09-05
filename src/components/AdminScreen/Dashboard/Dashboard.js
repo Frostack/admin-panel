@@ -5,7 +5,7 @@ import TotalCard from './TotalCard'
 
 function Dashboard() {
   return (
-    <div className="mx-5 my-4 d-flex justify-content-center">
+    <div className="my-4 d-flex flex-column align-items-center">
       <TotalCard
         reqPath="/users"
         icon={<BsPersonFill size={24} />}

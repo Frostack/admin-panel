@@ -80,6 +80,8 @@ export const LightText = styled.h5`
 `
 
 export const Avatar = styled.img`
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   border: 2px solid var(--gray-3);
 `
@@ -119,7 +121,10 @@ export const CustomForm = styled(Form)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25vw;
+  width: 75vw;
+  @media (min-width: 992px) {
+    width: 30vw;
+  }
 `
 
 export const CustomButton = styled(Button)`
@@ -127,6 +132,7 @@ export const CustomButton = styled(Button)`
   display: Flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
   width: 15vw;
 `
 
@@ -153,7 +159,6 @@ export const Inner = styled.div`
 export const Wrapper = styled.div`
   border-radius: 4px;
   position: fixed;
-  width: 50vw;
   background-color: #6bf178cc;
   color: ${props => props.color};
   border-bottom: 4px solid ${props => props.color};
@@ -165,6 +170,10 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 80vw;
+  @media (min-width: 576px) {
+    width: 50vw;
+  }
 `
 
 export const AlertCustomButton = styled(Button)`
@@ -185,17 +194,27 @@ export const TotalCardWrapper = styled.div`
   background-color: ${props => props.color};
   padding: 20px 16px;
   border-radius: 4px;
-  width: 30vw;
+  width: 75%;
   color: var(--white);
-  margin: 16px 32px;
   font-size: large;
+  margin-bottom: 32px;
   background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3));
 `
 
 export const SidebarWrapper = styled.div`
   background-color: var(--gray-1);
-  height: 100vh;
+  min-height: 100vh;
   padding: 32px;
+  display: flex;
+  flex-direction: column;
+`
+
+export const SmallSidebarWrapper = styled.div`
+  background-color: var(--gray-1);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 10000;
   display: flex;
   flex-direction: column;
 `
@@ -224,6 +243,7 @@ export const GrayText = styled.p`
   color: var(--gray-5);
   flex-basis: 15%;
   flex-shrink: 0;
+  white-space: nowrap;
 `
 
 export const ModalFieldCustomInput = styled(Field)`
@@ -235,6 +255,8 @@ export const ModalFieldCustomInput = styled(Field)`
   background-color: var(--gray-1);
   border-radius: 4px;
   padding: 2px 8px;
+  margin-left: 4px;
+  width: 100px;
   ::placeholder {
     color: var(--gray-6);
   }
@@ -257,9 +279,7 @@ export const UserCard = styled.div`
   background-color: var(--white);
 `
 
-export const UserListWrapper = styled.div`
-  height: 100vh;
-`
+export const UserListWrapper = styled.div``
 
 export const ListWrapper = styled.div`
   flex-grow: 1;
@@ -267,7 +287,6 @@ export const ListWrapper = styled.div`
 
 export const UserDetailWrapper = styled.div`
   height: 100vh;
-  padding: 32px 0;
   display: flex;
 `
 
@@ -327,6 +346,7 @@ export const ElementWrapper = styled.div`
 export const ElementRowItem = styled.p`
   margin: 0;
   flex-basis: 31%;
+  white-space: nowrap;
 `
 
 export const CustomRowItem = styled(ElementRowItem)`
@@ -344,8 +364,7 @@ export const InfoRow = styled.div`
 `
 
 export const AvatarWrapper = styled.div`
-  width: 32px;
-  margin-right: 16px;
+  width: 48px;
   display: flex;
   align-items: center;
 `

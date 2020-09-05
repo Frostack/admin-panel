@@ -19,18 +19,11 @@ function App() {
       <Router>
         <Switch>
           <Redirect exact from="/" to="/register" />
-          <Route path="/register">
-            <RegisterScreen />
-          </Route>
-
-          <Route path="/login">
-            <LoginScreen />
-          </Route>
-
-          <Route path="/admin">
-            <AdminScreen />
-          </Route>
+          <Route path="/register" component={RegisterScreen} />
+          <Route path="/login" component={LoginScreen} />
+          <Route path="/admin" component={AdminScreen} />
         </Switch>
+
         <AlertModal />
         <UserEditModal />
       </Router>

@@ -10,7 +10,7 @@ function Pagination({ page, setPage, totalPages }) {
   const nextDisabled = page === totalPages
 
   return (
-    <div className="mt-2 d-flex justify-content-between">
+    <div className="mt-3 d-flex justify-content-between">
       <div>
         <ButtonCircle onClick={onPrev} disabled={prevDisabled}>
           <BsCaretLeftFill />

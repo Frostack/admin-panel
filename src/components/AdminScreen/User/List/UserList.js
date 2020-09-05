@@ -27,7 +27,7 @@ function UserList() {
   }
 
   return (
-    <UserListWrapper className="px-5 py-4 d-flex flex-column">
+    <UserListWrapper className="px-1 px-md-5 py-4 d-flex flex-column">
       <h2 className="font-weight-bold mb-3">Users</h2>
       <UserHeading />
       <ListWrapper>{renderList()}</ListWrapper>

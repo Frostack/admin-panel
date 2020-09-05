@@ -1,17 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { BsPen, BsTrash2 } from 'react-icons/bs'
 
 import { showUserDetail, editUser, deleteUser, showAlert } from '../../../../actions'
-import {
-  Avatar,
-  ButtonCircle,
-  AvatarWrapper,
-  InfoRow,
-  RowActions,
-  ElementRowItem,
-  ElementWrapper,
-} from '../../../UI'
+import { InfoRow, ElementRowItem, ElementWrapper } from '../../../UI'
+import UserAvatar from './UserAvatar'
+import UserActions from './UserActions'
 
 function UserItem({ avatar, name, email, id, showUserDetail, editUser, deleteUser, showAlert }) {
   const onRowClick = () => showUserDetail(id)
@@ -23,23 +16,14 @@ function UserItem({ avatar, name, email, id, showUserDetail, editUser, deleteUse
 
   return (
     <ElementWrapper>
-      <AvatarWrapper>
-        <Avatar src={avatar} alt={name} />
-      </AvatarWrapper>
+      <UserAvatar avatar={avatar} name={name} />
 
       <InfoRow onClick={onRowClick}>
         <ElementRowItem>{name}</ElementRowItem>
         <ElementRowItem>{email}</ElementRowItem>
         <ElementRowItem>{id}</ElementRowItem>
 
-        <RowActions>
-          <ButtonCircle onClick={onEditClick}>
-            <BsPen size={18} />
-          </ButtonCircle>
-          <ButtonCircle onClick={onDeleteClick}>
-            <BsTrash2 size={18} />
-          </ButtonCircle>
-        </RowActions>
+        <UserActions onDeleteClick={onDeleteClick} onEditClick={onEditClick} />
       </InfoRow>
     </ElementWrapper>
   )

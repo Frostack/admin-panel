@@ -1,22 +1,18 @@
 import React from 'react'
 
-import {
-  AvatarWrapper,
-  RowActions,
-  ElementRowItem,
-  ElementWrapper,
-  InfoRowHeading,
-} from '../../../UI'
+import { ElementRowItem, ElementWrapper, InfoRowHeading } from '../../../UI'
+import UserAvatar from './UserAvatar'
+import UserActions from './UserActions'
 
 function TableHeading({ fields }) {
   return (
     <ElementWrapper>
-      <AvatarWrapper></AvatarWrapper>
+      <UserAvatar isHeading />
       <InfoRowHeading>
         <ElementRowItem>Name</ElementRowItem>
         <ElementRowItem>Email</ElementRowItem>
         <ElementRowItem>ID</ElementRowItem>
-        <RowActions></RowActions>
+        <UserActions isHeading />
       </InfoRowHeading>
     </ElementWrapper>
   )
