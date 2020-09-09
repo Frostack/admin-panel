@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsCaretLeftFill, BsCaretRightFill } from 'react-icons/bs'
 
-import { ButtonCircle } from '../UI'
+import { ButtonCircle } from '../common'
 
 function Pagination({ page, setPage, totalPages }) {
   const onPrev = () => setPage(page - 1)

@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 import useDeviceSize from '../../hooks/useDeviceSize'
-import { AdminScreenWrapper } from '../UI'
+import { AdminScreenWrapper } from '../common'
 import Sidebar from './Sidebar/Sidebar'
 import SmallSidebar from './Sidebar/SmallSidebar'
 import Dashboard from './Dashboard/Dashboard'

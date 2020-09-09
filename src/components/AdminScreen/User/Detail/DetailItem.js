@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { DetailRow } from '../../../UI'
+import { DetailRow } from '../../../common'
 
 const GrayText = styled.p`
   margin: 0;

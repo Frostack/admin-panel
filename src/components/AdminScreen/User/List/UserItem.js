@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import { showUserDetail, editUser, deleteUser, showAlert } from '../../../../actions'
-import { InfoRow, ElementRowItem, ElementWrapper } from '../../../UI'
+import { InfoRow, ElementRowItem, ElementWrapper } from '../../../common'
 import UserAvatar from './UserAvatar'
 import UserActions from './UserActions'
 

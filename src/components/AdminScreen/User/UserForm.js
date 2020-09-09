@@ -1,7 +1,7 @@
 import React from 'react'
 import { Formik, Form } from 'formik'
 
-import { Button } from '../../UI'
+import { Button } from '../../common'
 import ModalField from './Modal/ModalField'
 
 function UserForm({ initialValues, onSubmit }) {

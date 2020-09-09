@@ -1,10 +1,12 @@
 import React from 'react'
 
+import useVerified from './../../hooks/useVerified'
 import useAuth from '../../hooks/useAuth'
 import AuthScreen from './AuthScreen'
 import AuthLink from './AuthLink'
 
 function LoginScreen() {
+  useVerified()
   const { error, isLoading, onSubmit } = useAuth('/login')
 
   return (

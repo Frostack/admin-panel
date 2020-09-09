@@ -10,8 +10,8 @@ import {
   ResourceDetailRowItem,
   ResourceDetailGrayText,
   ColorName,
-} from '../../../UI'
-import Loading from '../../../UI/Loading'
+} from '../../../common'
+import Loading from '../../../common/Loading'
 
 function ResourceDetail({ resourceID }) {
   const { resource, isError, isLoading } = useResource(resourceID)

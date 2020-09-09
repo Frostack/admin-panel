@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ElementRowItem, ElementWrapper, InfoRowHeading } from '../../../UI'
+import { ElementRowItem, ElementWrapper, InfoRowHeading } from '../../../common'
 import UserAvatar from './UserAvatar'
 import UserActions from './UserActions'
 

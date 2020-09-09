@@ -1,11 +1,20 @@
 import React from 'react'
 import { BsPersonFill, BsLayersFill, BsBarChartFill } from 'react-icons/bs'
+import { useHistory } from 'react-router-dom'
+import Cookies from 'js-cookie'
 
-import { BoldText, SidebarWrapper, ExitLink } from '../../UI'
+import { BoldText, SidebarWrapper, ExitButton } from '../../common'
 import SidebarLink from './SidebarLink'
 import SidebarBoldLink from './SidebarBoldLink'
 
 function Sidebar() {
+  const history = useHistory()
+
+  const onExitClick = () => {
+    Cookies.remove('token')
+    history.push('/')
+  }
+
   return (
     <SidebarWrapper>
       <SidebarBoldLink to="/admin/dashboard">
@@ -25,7 +34,7 @@ function Sidebar() {
         Resource
       </BoldText>
       <SidebarLink to="/admin/resource/list">List</SidebarLink>
-      <ExitLink to="/login">Logout</ExitLink>
+      <ExitButton onClick={onExitClick}>Logout</ExitButton>
     </SidebarWrapper>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { SmallText, TextButton } from '../UI'
+import { SmallText, TextButton } from '../common'
 
 function AuthLink({ description, to, buttonText }) {
   return (

@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-import { Link } from 'react-router-dom'
 import { Field, Form } from 'formik'
 import Col from 'react-bootstrap/Col'
 
@@ -219,13 +218,15 @@ export const SmallSidebarWrapper = styled.div`
   flex-direction: column;
 `
 
-export const ExitLink = styled(Link)`
+export const ExitButton = styled.button`
   color: white;
   background-color: var(--red-1);
+  border: none;
   margin-top: auto;
   border-radius: 4px;
   padding: 8px 16px;
   text-align: center;
+  transition: 0.2s;
   :hover {
     background-color: var(--red-2);
     color: white;

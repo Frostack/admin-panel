@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLocation, Link } from 'react-router-dom'
 
-import { LightText } from '../../UI'
+import { LightText } from '../../common'
 
 function SidebarLink({ children, to }) {
   const { pathname } = useLocation()

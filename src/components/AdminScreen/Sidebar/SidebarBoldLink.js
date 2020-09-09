@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { BoldText } from '../../UI'
+import { BoldText } from '../../common'
 
 function SidebarBoldLink({ children, to }) {
   return (

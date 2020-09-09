@@ -1,7 +1,7 @@
 import React from 'react'
 
 import useDeviceSize from '../../../../hooks/useDeviceSize'
-import { AvatarWrapper, Avatar } from '../../../UI'
+import { AvatarWrapper, Avatar } from '../../../common'
 
 function UserAvatar({ avatar, name, isHeading }) {
   const deviceSize = useDeviceSize()

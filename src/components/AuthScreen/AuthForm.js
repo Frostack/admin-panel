@@ -1,7 +1,7 @@
 import React from 'react'
 import { Formik } from 'formik'
 
-import { CustomForm, CustomInput } from '../UI'
+import { CustomForm, CustomInput } from '../common'
 import AuthButton from './AuthButton'
 
 function AuthForm({ onSubmit, isLoading, title }) {

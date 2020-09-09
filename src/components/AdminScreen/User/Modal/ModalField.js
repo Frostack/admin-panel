@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { RowItem, GrayText, ModalFieldCustomInput } from '../../../UI'
+import { RowItem, GrayText, ModalFieldCustomInput } from '../../../common'
 
 function ModalField({ name, label }) {
   return (

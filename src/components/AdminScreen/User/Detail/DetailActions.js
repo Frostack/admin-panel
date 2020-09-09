@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsPen, BsTrash2 } from 'react-icons/bs'
-import { Button } from '../../../UI'
+import { Button } from '../../../common'
 
 function DetailActions({ id, editItem, deleteItem, showAlert }) {
   const onEditClick = () => editItem(id)

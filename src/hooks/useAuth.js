@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
+import Cookies from 'js-cookie'
 
 import api from '../apis/reqres'
 import { showAlert } from '../actions'
@@ -14,7 +15,8 @@ const useAuth = reqPath => {
   const onSubmit = async values => {
     setIsLoading(true)
     try {
-      await api.post(reqPath, values)
+      const response = await api.post(reqPath, values)
+      Cookies.set('token', response.data.token)
       history.push('/admin/dashboard')
       dispatch(showAlert('You Are Logged in'))
     } catch (err) {

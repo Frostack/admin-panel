@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ResourceHeadingWrapper, CustomRowItem } from '../../../UI'
+import { ResourceHeadingWrapper, CustomRowItem } from '../../../common'
 
 function ResourceHeading() {
   return (

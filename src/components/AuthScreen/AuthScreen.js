@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 
 import authImage from '../../assets/auth.jpg'
 import useDeviceSize from '../../hooks/useDeviceSize'
-import { Image, ErrorText, AuthColumn } from '../UI'
+import { Image, ErrorText, AuthColumn } from '../common'
 import AuthForm from './AuthForm'
 
 function AuthScreen({ title, error, isLoading, onSubmit, authLinkComponent }) {

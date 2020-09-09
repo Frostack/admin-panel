@@ -2,7 +2,7 @@ import React from 'react'
 import { BsPen, BsTrash2 } from 'react-icons/bs'
 
 import useDeviceSize from '../../../../hooks/useDeviceSize'
-import { RowActions, ButtonCircle } from '../../../UI'
+import { RowActions, ButtonCircle } from '../../../common'
 
 function UserActions({ onEditClick, onDeleteClick, isHeading }) {
   const deviceSize = useDeviceSize()

@@ -1,7 +1,7 @@
 import React from 'react'
 import Spinner from 'react-bootstrap/Spinner'
 
-import { CustomButton } from '../UI'
+import { CustomButton } from '../common'
 
 function AuthButton({ isLoading, title }) {
   if (isLoading) {

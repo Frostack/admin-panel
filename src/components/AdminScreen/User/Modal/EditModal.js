@@ -1,10 +1,10 @@
 import React from 'react'
 import Modal from 'react-bootstrap/Modal'
 
-import { UserCard, EditModalWrapper } from '../../../UI'
+import { UserCard, EditModalWrapper } from '../../../common'
 import useUser from '../../../../hooks/useUser'
-import Loading from '../../../UI/Loading'
-import RequestError from '../../../UI/RequestError'
+import Loading from '../../../common/Loading'
+import RequestError from '../../../common/RequestError'
 import UserForm from '../UserForm'
 
 function EditModal({ itemID, updateItem, showAlert, onHide }) {

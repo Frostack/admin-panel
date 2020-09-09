@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { UserListWrapper, ListWrapper } from '../../../UI'
+import { UserListWrapper, ListWrapper } from '../../../common'
 import useList from '../../../../hooks/useList'
 import UserHeading from './UserHeading'
 import UserItem from './UserItem'
-import Pagination from '../../../UI/Pagination'
-import Loading from '../../../UI/Loading'
-import RequestError from '../../../UI/RequestError'
+import Pagination from '../../../common/Pagination'
+import Loading from '../../../common/Loading'
+import RequestError from '../../../common/RequestError'
 
 function UserList() {
   const { items, error, isLoading, page, setPage, totalPages } = useList('users')

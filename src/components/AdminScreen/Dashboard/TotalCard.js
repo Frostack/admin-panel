@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { TotalCardWrapper } from '../../UI'
+import { TotalCardWrapper } from '../../common'
 import useTotal from '../../../hooks/useTotal'
-import Progress from '../../UI/Progress'
-import RequestError from '../../UI/RequestError'
-import Loading from '../../UI/Loading'
+import Progress from '../../common/Progress'
+import RequestError from '../../common/RequestError'
+import Loading from '../../common/Loading'
 
 function TotalCard({ icon, caption, color, reqPath }) {
   const { total, isLoading, error } = useTotal(reqPath)

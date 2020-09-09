@@ -2,11 +2,11 @@ import React from 'react'
 
 import useList from '../../../../hooks/useList'
 import ResourceItem from './ResourceItem'
-import Pagination from '../../../UI/Pagination'
-import Loading from '../../../UI/Loading'
+import Pagination from '../../../common/Pagination'
+import Loading from '../../../common/Loading'
 import ResourceHeading from './ResourceHeading'
-import RequestError from '../../../UI/RequestError'
-import { ResourceListListWrapper, ResourceListWrapper } from '../../../UI'
+import RequestError from '../../../common/RequestError'
+import { ResourceListListWrapper, ResourceListWrapper } from '../../../common'
 
 function UserList() {
   const { items, error, isLoading, page, setPage, totalPages } = useList('unknown')

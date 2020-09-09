@@ -1,5 +1,5 @@
 import React from 'react'
-import { BoldText, DetailRow } from '../../../UI'
+import { BoldText, DetailRow } from '../../../common'
 
 function DetailName({ name }) {
   return (

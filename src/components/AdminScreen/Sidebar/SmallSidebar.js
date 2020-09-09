@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { BsChevronDown, BsX } from 'react-icons/bs'
 
-import { SmallSidebarWrapper, Button } from '../../UI'
+import { SmallSidebarWrapper, Button } from '../../common'
 import Sidebar from './Sidebar'
 
 function SmallSidebar() {

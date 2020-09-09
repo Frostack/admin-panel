@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import { showResourceDetail, deleteResource, showAlert, editResource } from '../../../../actions'
-import { CustomRowItem, CustomRowInfo } from '../../../UI'
+import { CustomRowItem, CustomRowInfo } from '../../../common'
 
 function ResourceItem({ name, year, color, pantone, id, showResourceDetail }) {
   const onRowClick = () => showResourceDetail(id)
